@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T00:00:00+08:00",
+  "title": "Design System: 北陸自駕 8 日",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "冷白卡紙 Card Stock",
+        "canonical": "oklch(96.9% 0.003 247.9)",
+        "cssVar": "--paper",
+        "dark": "#0f1524",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#414244",
+          "#626365",
+          "#848688",
+          "#a9abad",
+          "#ccced0",
+          "#edeff1"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "白頁 Sheet White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "cssVar": "--sheet",
+        "dark": "#161e31",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#424242",
+          "#636363",
+          "#868686",
+          "#ababab",
+          "#cecece",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "墨 Ink",
+        "canonical": "oklch(25.3% 0.051 266.8)",
+        "cssVar": "--ink",
+        "dark": "#e8ecf5",
+        "tonalRamp": [
+          "#030920",
+          "#19233d",
+          "#36425e",
+          "#566381",
+          "#7886a6",
+          "#9cabcc",
+          "#bfcef0",
+          "#e7eeff"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "淡墨 Ink 2",
+        "canonical": "oklch(43.5% 0.055 268.2)",
+        "cssVar": "--ink-2",
+        "dark": "#b8c1d6",
+        "tonalRamp": [
+          "#040822",
+          "#19223f",
+          "#364160",
+          "#566283",
+          "#7885a8",
+          "#9caacf",
+          "#becdf3",
+          "#e8eeff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "灰墨 Ink 3",
+        "canonical": "oklch(52.2% 0.045 267.5)",
+        "cssVar": "--ink-3",
+        "dark": "#96a0b8",
+        "tonalRamp": [
+          "#04091e",
+          "#1a233a",
+          "#38425b",
+          "#58637d",
+          "#7a86a2",
+          "#9eabc8",
+          "#c1ceec",
+          "#e8eefe"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "髮線 Hairline",
+        "canonical": "oklch(90.8% 0.012 259.8)",
+        "cssVar": "--rule",
+        "dark": "#26304a",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3f4349",
+          "#5f636a",
+          "#82868e",
+          "#a6abb3",
+          "#c9ced6",
+          "#eaeff7"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "粗髮線 Strong Hairline",
+        "canonical": "oklch(84.1% 0.020 263.0)",
+        "cssVar": "--rule-strong",
+        "dark": "#34405e",
+        "tonalRamp": [
+          "#070b14",
+          "#1f242e",
+          "#3d434d",
+          "#5d636f",
+          "#808692",
+          "#a4abb8",
+          "#c7cedb",
+          "#e8effc"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "海軍藍封面 Navy Cover",
+        "canonical": "oklch(31.8% 0.087 265.9)",
+        "cssVar": "--navy",
+        "dark": "#1a2a52",
+        "tonalRamp": [
+          "#01032f",
+          "#10204d",
+          "#2c4070",
+          "#4c6195",
+          "#6d85bb",
+          "#91aae2",
+          "#b7cdff",
+          "#e7efff"
+        ]
+      },
+      "navy-2": {
+        "role": "primary",
+        "displayName": "深一階海軍藍 Navy Deep Link",
+        "canonical": "oklch(39.5% 0.109 265.7)",
+        "cssVar": "--navy-2",
+        "dark": "#2a4280",
+        "tonalRamp": [
+          "#010035",
+          "#0b1d57",
+          "#263e7b",
+          "#4560a1",
+          "#6784c8",
+          "#8aa9f0",
+          "#b7cefe",
+          "#e7effe"
+        ]
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "藍底白字 On Navy",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "cssVar": "--on-navy",
+        "dark": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#424242",
+          "#636363",
+          "#868686",
+          "#ababab",
+          "#cecece",
+          "#eeeeee"
+        ]
+      },
+      "on-navy-2": {
+        "role": "neutral",
+        "displayName": "藍底淡字 On Navy 2",
+        "canonical": "oklch(86.7% 0.036 268.3)",
+        "cssVar": "--on-navy-2",
+        "dark": "#b8c4e4",
+        "tonalRamp": [
+          "#050a1a",
+          "#1c2336",
+          "#3a4256",
+          "#5a6379",
+          "#7d869d",
+          "#a1abc3",
+          "#c4cde6",
+          "#e8eefe"
+        ]
+      },
+      "shu": {
+        "role": "secondary",
+        "displayName": "朱印泥 Shu Vermilion",
+        "canonical": "oklch(54.9% 0.189 30.8)",
+        "cssVar": "--shu",
+        "dark": "#f0644f",
+        "tonalRamp": [
+          "#1e0100",
+          "#4a0400",
+          "#7f0d01",
+          "#b71d09",
+          "#e14b37",
+          "#fe806c",
+          "#ffbaae",
+          "#fee9e5"
+        ],
+        "aliases": [
+          "--ink-ok"
+        ]
+      },
+      "shu-wash": {
+        "role": "secondary",
+        "displayName": "朱暈 Shu Wash",
+        "canonical": "oklch(94.8% 0.020 28.9)",
+        "cssVar": "--shu-wash",
+        "dark": "#3a1d1c",
+        "tonalRamp": [
+          "#130807",
+          "#2d201e",
+          "#4d3f3c",
+          "#6e5f5d",
+          "#92827f",
+          "#b7a6a4",
+          "#dbc9c6",
+          "#fceae7"
+        ]
+      },
+      "ink-sec": {
+        "role": "tertiary",
+        "displayName": "黃土印泥 Ochre Ink",
+        "canonical": "oklch(58.0% 0.120 76.3)",
+        "cssVar": "--ink-sec",
+        "dark": "#e0aa3a",
+        "tonalRamp": [
+          "#130900",
+          "#332001",
+          "#5a3b00",
+          "#845a04",
+          "#af7b1f",
+          "#d6a04b",
+          "#fac36f",
+          "#ffebd0"
+        ],
+        "aliases": [
+          "--ink-mate"
+        ]
+      },
+      "ink-call": {
+        "role": "tertiary",
+        "displayName": "紫印泥 Violet Ink",
+        "canonical": "oklch(46.3% 0.138 306.8)",
+        "cssVar": "--ink-call",
+        "dark": "#b88ae0",
+        "tonalRamp": [
+          "#140024",
+          "#350055",
+          "#56277a",
+          "#784aa0",
+          "#9c6dc7",
+          "#c192ef",
+          "#debeff",
+          "#f4eaff"
+        ]
+      },
+      "ink-bad": {
+        "role": "tertiary",
+        "displayName": "靛藍印泥 Indigo Ink",
+        "canonical": "oklch(38.3% 0.104 263.0)",
+        "cssVar": "--ink-bad",
+        "dark": "#7ea2f0",
+        "tonalRamp": [
+          "#00052c",
+          "#061e55",
+          "#233f79",
+          "#43619f",
+          "#6485c5",
+          "#88aaed",
+          "#b5cefe",
+          "#e7effe"
+        ],
+        "aliases": [
+          "--ink-me"
+        ]
+      },
+      "ink-na": {
+        "role": "tertiary",
+        "displayName": "褪色印泥 Faded Ink",
+        "canonical": "oklch(66.3% 0.033 267.1)",
+        "cssVar": "--ink-na",
+        "dark": "#7d879e",
+        "tonalRamp": [
+          "#060a19",
+          "#1d2434",
+          "#3a4254",
+          "#5b6377",
+          "#7d869b",
+          "#a1abc0",
+          "#c4cee4",
+          "#e8eeff"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "警示紅 Danger",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "cssVar": "--danger",
+        "dark": "#f0644f",
+        "tonalRamp": [
+          "#1f0000",
+          "#4b0001",
+          "#810203",
+          "#b3251e",
+          "#dd5043",
+          "#ff7f6f",
+          "#febab0",
+          "#ffe9e5"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "焦點藍 Focus",
+        "canonical": "oklch(39.5% 0.109 265.7)",
+        "cssVar": "--focus",
+        "dark": "#9db6f5",
+        "tonalRamp": [
+          "#010035",
+          "#0b1d57",
+          "#263e7b",
+          "#4560a1",
+          "#6784c8",
+          "#8aa9f0",
+          "#b7cefe",
+          "#e7effe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "總覽頂區的出發倒數天數。"
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "8 天列表的日數；結算金額同角色放到 56px。"
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "時間軸時刻；同族 16–34px 用於日期、金額、總計與金額輸入。"
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "單日標題；面板 21px、總覽 h1 24px、區塊 19px、頂列 17px。"
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "內文；站名與日主軸 16px／700，備註 12.5–14px。"
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "表單欄位標題與群組標題。"
+      },
+      "label-tab": {
+        "displayName": "Tab Label",
+        "purpose": "底部五分頁的標籤。"
+      },
+      "seal": {
+        "displayName": "Seal",
+        "purpose": "只用在印章 SVG 內的 Yuji Syuku 子集（10 字）。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet-lift",
+        "value": "0 -10px 32px rgba(0, 0, 0, .18)",
+        "purpose": "底部面板上緣；背後遮罩 rgba(12, 20, 40, .42)。"
+      },
+      {
+        "name": "fab",
+        "value": "0 6px 16px rgba(0, 0, 0, .22), 0 1px 3px rgba(0, 0, 0, .18)",
+        "purpose": "分帳頁「記一筆」浮動按鈕。"
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 20px rgba(0, 0, 0, .2)",
+        "purpose": "提示條。"
+      },
+      {
+        "name": "dragging",
+        "value": "0 8px 20px rgba(0, 0, 0, .14)",
+        "purpose": "編輯模式中被拖起的站。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "全站預設緩動（--ease）。"
+      },
+      {
+        "name": "stamp-down",
+        "value": "0.5s var(--ease) both",
+        "purpose": "蓋章：1.9 倍＋多轉 14°＋模糊 3px 落下，壓到 0.92 再回到 1。"
+      },
+      {
+        "name": "sheet-up",
+        "value": "0.32s var(--ease)",
+        "purpose": "底部面板開啟，由下 40px 淡入。"
+      },
+      {
+        "name": "sheet-down",
+        "value": "0.18s ease-in forwards",
+        "purpose": "底部面板關閉。"
+      },
+      {
+        "name": "press",
+        "value": "transform .15s var(--ease); scale(.97)",
+        "purpose": "按鈕與 FAB 按下回饋。"
+      },
+      {
+        "name": "toast",
+        "value": "opacity .25s var(--ease), transform .35s var(--ease)",
+        "purpose": "提示條上浮 12px 出現，2.6 秒後消失。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation-duration / transition-duration: .01ms",
+        "purpose": "prefers-reduced-motion 時關閉所有動畫。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "content-max",
+        "value": "560px"
+      },
+      {
+        "name": "tabbar-framed",
+        "value": "600px"
+      }
+    ],
+    "darkMode": {
+      "strategy": "prefers-color-scheme: dark 在 :root 重新指定變數（各色的 dark 值見 colorMeta）；--stamp-blend 由 multiply 改 normal；主要按鈕與 FAB 改用 --navy-2；連結改用 --focus；日數與目前分頁改用 --ink。"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "主要動作（導航、儲存），海軍藍實心。",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 11l18-8-8 18-2-8-8-2z\"/></svg>導航</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 18px;border-radius:12px;border:1px solid var(--rule-strong,#c4cbd8);background:var(--sheet,#fff);color:var(--ink,#17213b);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:700;font-size:15px;cursor:pointer;transition:transform .15s cubic-bezier(.16,1,.3,1),background-color .2s cubic-bezier(.16,1,.3,1);}.ds-btn:active{transform:scale(.97);}.ds-btn:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:2px;}.ds-btn-primary{background:var(--navy,#1d2f5e);border-color:var(--navy,#1d2f5e);color:var(--on-navy,#fff);}"
+    },
+    {
+      "name": "Default Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "一般動作（撥電話、關閉、編輯），白頁底粗髮線外框。",
+      "html": "<button class=\"ds-btn\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z\"/></svg><span class=\"ds-n\">0577-73-7100</span></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 18px;border-radius:12px;border:1px solid var(--rule-strong,#c4cbd8);background:var(--sheet,#fff);color:var(--ink,#17213b);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:700;font-size:15px;cursor:pointer;transition:transform .15s cubic-bezier(.16,1,.3,1),background-color .2s cubic-bezier(.16,1,.3,1);}.ds-btn:active{transform:scale(.97);}.ds-btn:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:2px;}.ds-btn .ds-n{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-variant-numeric:tabular-nums;font-size:16px;}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "刪除；第一次按下變成警示紅實心的「再按一次確認刪除」，3 秒後恢復。",
+      "html": "<button class=\"ds-btn ds-btn-danger\">刪除這一筆</button> <button class=\"ds-btn ds-btn-danger ds-armed\">再按一次確認刪除</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 18px;border-radius:12px;border:1px solid var(--rule-strong,#c4cbd8);background:var(--sheet,#fff);color:var(--ink,#17213b);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:700;font-size:15px;cursor:pointer;transition:transform .15s cubic-bezier(.16,1,.3,1),background-color .2s cubic-bezier(.16,1,.3,1);}.ds-btn:active{transform:scale(.97);}.ds-btn:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:2px;}.ds-btn-danger{color:var(--danger,#b3261e);border-color:color-mix(in srgb,var(--danger,#b3261e) 45%,transparent);}.ds-btn-danger.ds-armed{background:var(--danger,#b3261e);color:#fff;border-color:var(--danger,#b3261e);}"
+    },
+    {
+      "name": "Stamp",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "招牌元件：雙圈印泥章，顏色即查證等級（確／次／電／衝，不需查為虛線空圈），狀態改變時下壓蓋章。",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><filter id=\"ds-ink\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"2\" seed=\"4\" result=\"warp\"/><feDisplacementMap in=\"SourceGraphic\" in2=\"warp\" scale=\"1.5\" xChannelSelector=\"R\" yChannelSelector=\"G\" result=\"shaky\"/><feTurbulence type=\"fractalNoise\" baseFrequency=\"1.9\" numOctaves=\"1\" seed=\"9\" result=\"speck\"/><feColorMatrix in=\"speck\" type=\"matrix\" values=\"0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 2.6\" result=\"mask\"/><feComposite in=\"shaky\" in2=\"mask\" operator=\"in\"/></filter></svg><div style=\"display:flex;gap:14px;align-items:center\"><svg class=\"ds-stamp\" width=\"44\" height=\"44\" viewBox=\"0 0 40 40\" style=\"--tone:var(--ink-ok,#c8321f);--rot:-6deg\" role=\"img\" aria-label=\"確\"><g filter=\"url(#ds-ink)\"><circle cx=\"20\" cy=\"20\" r=\"17.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"20\" cy=\"20\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"20\" y=\"21.5\" text-anchor=\"middle\" dominant-baseline=\"central\">確</text></g></svg><svg class=\"ds-stamp\" width=\"38\" height=\"38\" viewBox=\"0 0 40 40\" style=\"--tone:var(--ink-sec,#a26f08);--rot:4deg\" role=\"img\" aria-label=\"次\"><g filter=\"url(#ds-ink)\"><circle cx=\"20\" cy=\"20\" r=\"17.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"20\" cy=\"20\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"20\" y=\"21.5\" text-anchor=\"middle\" dominant-baseline=\"central\">次</text></g></svg><svg class=\"ds-stamp\" width=\"38\" height=\"38\" viewBox=\"0 0 40 40\" style=\"--tone:var(--ink-call,#6d3f94);--rot:-9deg\" role=\"img\" aria-label=\"電\"><g filter=\"url(#ds-ink)\"><circle cx=\"20\" cy=\"20\" r=\"17.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"20\" cy=\"20\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"20\" y=\"21.5\" text-anchor=\"middle\" dominant-baseline=\"central\">電</text></g></svg><span class=\"ds-stamp-in\" style=\"display:inline-block\"><svg class=\"ds-stamp\" width=\"38\" height=\"38\" viewBox=\"0 0 40 40\" style=\"--tone:var(--ink-bad,#24407a);--rot:2deg\" role=\"img\" aria-label=\"衝\"><g filter=\"url(#ds-ink)\"><circle cx=\"20\" cy=\"20\" r=\"17.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"20\" cy=\"20\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"20\" y=\"21.5\" text-anchor=\"middle\" dominant-baseline=\"central\">衝</text></g></svg></span><i style=\"display:block;width:30px;height:30px;border-radius:50%;border:1.5px dashed var(--rule-strong,#c4cbd8)\"></i></div>",
+      "css": ".ds-stamp{display:inline-block;color:var(--tone);transform:rotate(var(--rot));mix-blend-mode:multiply;opacity:.95;overflow:visible;}.ds-stamp text{font-family:'Seal','Noto Sans TC',sans-serif;font-size:19px;fill:currentColor;stroke:currentColor;stroke-width:.6px;}.ds-stamp-in{animation:ds-stamp-down .5s cubic-bezier(.16,1,.3,1) both;}@keyframes ds-stamp-down{0%{transform:rotate(calc(var(--rot) - 14deg)) scale(1.9);opacity:0;filter:blur(3px);}45%{transform:rotate(var(--rot)) scale(.92);opacity:1;filter:blur(0);}70%{transform:rotate(var(--rot)) scale(1.04);}100%{transform:rotate(var(--rot)) scale(1);opacity:.95;}}@media (prefers-reduced-motion: reduce){.ds-stamp-in{animation:none;}}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "單選膠囊（付款人、幣別、分類），選取時海軍藍實心。",
+      "html": "<div style=\"display:flex;gap:8px\"><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-c\" checked><span>我</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-c\"><span>旅伴</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-c\"><span>JPY</span></label></div>",
+      "css": ".ds-chip{position:relative;}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0;}.ds-chip span{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;border-radius:999px;border:1px solid var(--rule-strong,#c4cbd8);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:700;font-size:14.5px;color:var(--ink,#17213b);cursor:pointer;}.ds-chip input:checked~span{background:var(--navy,#1d2f5e);border-color:var(--navy,#1d2f5e);color:var(--on-navy,#fff);}.ds-chip input:focus-visible~span{outline:2px solid var(--focus,#2a4280);outline-offset:2px;}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "表單欄位：卡紙底、粗髮線，焦點換成 2px 藍外框；金額欄用 Barlow 34px。",
+      "html": "<label class=\"ds-f\"><span>金額</span><input class=\"ds-amt\" inputmode=\"decimal\" value=\"3,480\"></label><label class=\"ds-f\"><span>備註</span><input placeholder=\"例如：高山拉麵\"></label>",
+      "css": ".ds-f{display:grid;gap:6px;margin-bottom:14px;}.ds-f>span{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-size:13px;font-weight:700;color:var(--ink-2,#445070);}.ds-f input{width:100%;box-sizing:border-box;min-height:46px;padding:10px 12px;border-radius:10px;border:1px solid var(--rule-strong,#c4cbd8);background:var(--paper,#f3f5f7);color:var(--ink,#17213b);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-size:16px;}.ds-f input::placeholder{color:var(--ink-3,#5e6984);}.ds-f input:focus{outline:2px solid var(--focus,#2a4280);outline-offset:0;border-color:transparent;}.ds-f input.ds-amt{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-variant-numeric:tabular-nums;font-size:34px;font-weight:700;min-height:62px;}"
+    },
+    {
+      "name": "Tab Bar",
+      "kind": "nav",
+      "refersTo": "tabbar",
+      "description": "底部固定五分頁，目前頁海軍藍並加上緣 3px 短橫條。",
+      "html": "<nav class=\"ds-tabbar\" aria-label=\"主要分頁\"><a href=\"#\" aria-current=\"page\"><svg width=\"23\" height=\"23\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z\"/></svg>總覽</a><a href=\"#\"><svg width=\"23\" height=\"23\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z\"/></svg>今天</a><a href=\"#\"><svg width=\"23\" height=\"23\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z\"/></svg>地圖</a><a href=\"#\"><svg width=\"23\" height=\"23\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z\"/></svg>分帳</a><a href=\"#\"><svg width=\"23\" height=\"23\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z\"/></svg>清單</a></nav>",
+      "css": ".ds-tabbar{display:grid;grid-template-columns:repeat(5,1fr);height:64px;background:color-mix(in srgb,var(--sheet,#fff) 94%,transparent);border-top:1px solid var(--rule,#dce1e9);backdrop-filter:saturate(1.4) blur(14px);}.ds-tabbar a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-size:11.5px;font-weight:700;color:var(--ink-3,#5e6984);text-decoration:none;}.ds-tabbar a[aria-current=page]{color:var(--navy,#1d2f5e);}.ds-tabbar a[aria-current=page]::before{content:'';position:absolute;top:0;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:currentColor;}.ds-tabbar a:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:-2px;}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "nav",
+      "refersTo": "segment",
+      "description": "分帳頁四格檢視切換。",
+      "html": "<div class=\"ds-seg\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\">總帳</button><button role=\"tab\">每日</button><button role=\"tab\">類別</button><button role=\"tab\">結算</button></div>",
+      "css": ".ds-seg{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;}.ds-seg button{min-height:40px;border:1px solid var(--rule-strong,#c4cbd8);border-radius:10px;background:var(--sheet,#fff);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;font-weight:700;font-size:14.5px;color:var(--ink-2,#445070);cursor:pointer;}.ds-seg button[aria-selected=true]{background:var(--navy,#1d2f5e);color:var(--on-navy,#fff);border-color:var(--navy,#1d2f5e);}.ds-seg button:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:2px;}"
+    },
+    {
+      "name": "Day Row",
+      "kind": "card",
+      "refersTo": "headline",
+      "description": "總覽的 8 天列：大日數＋主軸＋住宿，髮線分隔，今天那列日數轉朱。",
+      "html": "<a class=\"ds-day is-today\" href=\"#\"><b class=\"ds-dnum\">2</b><span class=\"ds-dbody\"><span class=\"ds-ddate\"><span class=\"ds-n\">11/27</span>週五 <em>今天</em></span><span class=\"ds-dtitle\">宮川朝市、三町 → 飛驒古川午餐</span><span class=\"ds-dmeta\">住 高山 Mine House</span></span></a><a class=\"ds-day\" href=\"#\"><b class=\"ds-dnum\">3</b><span class=\"ds-dbody\"><span class=\"ds-ddate\"><span class=\"ds-n\">11/28</span>週六</span><span class=\"ds-dtitle\">新穗高纜車 → 奧飛驒</span><span class=\"ds-dmeta\">住 高山 Mine House</span></span></a>",
+      "css": ".ds-day{display:grid;grid-template-columns:58px 1fr;gap:4px 12px;padding:16px;text-decoration:none;color:var(--ink,#17213b);border-bottom:1px solid var(--rule,#dce1e9);transition:background-color .2s cubic-bezier(.16,1,.3,1);}.ds-day:hover,.ds-day:active{background:color-mix(in srgb,var(--navy,#1d2f5e) 6%,transparent);}.ds-day:focus-visible{outline:2px solid var(--focus,#2a4280);outline-offset:-2px;}.ds-dnum{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-variant-numeric:tabular-nums;font-size:52px;line-height:.86;font-weight:700;color:var(--navy,#1d2f5e);}.ds-day.is-today .ds-dnum{color:var(--shu,#c8321f);}.ds-dbody{display:flex;flex-direction:column;gap:3px;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;}.ds-ddate{font-size:13px;color:var(--ink-3,#5e6984);display:flex;gap:6px;align-items:baseline;}.ds-n{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-variant-numeric:tabular-nums;font-size:16px;font-weight:600;color:var(--ink-2,#445070);}.ds-ddate em{font-style:normal;font-weight:800;color:var(--shu,#c8321f);}.ds-dtitle{font-size:16px;font-weight:700;line-height:1.4;}.ds-dmeta{font-size:13px;color:var(--ink-2,#445070);}"
+    },
+    {
+      "name": "Bottom Sheet",
+      "kind": "custom",
+      "refersTo": "sheet",
+      "description": "單站詳情的底部面板：把手、標題＋大印章、鍵值表。",
+      "html": "<svg width=\"0\" height=\"0\" style=\"position:absolute\" aria-hidden=\"true\"><filter id=\"ds-ink\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"2\" seed=\"4\" result=\"warp\"/><feDisplacementMap in=\"SourceGraphic\" in2=\"warp\" scale=\"1.5\" xChannelSelector=\"R\" yChannelSelector=\"G\" result=\"shaky\"/><feTurbulence type=\"fractalNoise\" baseFrequency=\"1.9\" numOctaves=\"1\" seed=\"9\" result=\"speck\"/><feColorMatrix in=\"speck\" type=\"matrix\" values=\"0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 2.6\" result=\"mask\"/><feComposite in=\"shaky\" in2=\"mask\" operator=\"in\"/></filter></svg><div class=\"ds-sheet\"><i class=\"ds-grip\"></i><div class=\"ds-sh-head\"><div><h2>午餐：味処古川</h2><p>Day 2 · 13:00 · 用餐</p></div><svg class=\"ds-stamp\" width=\"58\" height=\"58\" viewBox=\"0 0 40 40\" style=\"--tone:var(--ink-ok,#c8321f);--rot:-5deg\" role=\"img\" aria-label=\"確\"><g filter=\"url(#ds-ink)\"><circle cx=\"20\" cy=\"20\" r=\"17.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"20\" cy=\"20\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"20\" y=\"21.5\" text-anchor=\"middle\" dominant-baseline=\"central\">確</text></g></svg></div><dl class=\"ds-kv\"><dt>營業時間</dt><dd>10:30–14:00</dd></dl><dl class=\"ds-kv\"><dt>地址</dt><dd>岐阜県飛騨市古川町壱之町11-3</dd></dl></div>",
+      "css": ".ds-stamp{display:inline-block;color:var(--tone);transform:rotate(var(--rot));mix-blend-mode:multiply;opacity:.95;overflow:visible;}.ds-stamp text{font-family:'Seal','Noto Sans TC',sans-serif;font-size:19px;fill:currentColor;stroke:currentColor;stroke-width:.6px;}.ds-stamp-in{animation:ds-stamp-down .5s cubic-bezier(.16,1,.3,1) both;}@keyframes ds-stamp-down{0%{transform:rotate(calc(var(--rot) - 14deg)) scale(1.9);opacity:0;filter:blur(3px);}45%{transform:rotate(var(--rot)) scale(.92);opacity:1;filter:blur(0);}70%{transform:rotate(var(--rot)) scale(1.04);}100%{transform:rotate(var(--rot)) scale(1);opacity:.95;}}@media (prefers-reduced-motion: reduce){.ds-stamp-in{animation:none;}}.ds-sheet{background:var(--sheet,#fff);color:var(--ink,#17213b);border-radius:18px 18px 0 0;padding:8px 16px 20px;box-shadow:0 -10px 32px rgba(0,0,0,.18);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;animation:ds-sheet-up .32s cubic-bezier(.16,1,.3,1);}@keyframes ds-sheet-up{from{transform:translateY(40px);opacity:0;}}.ds-grip{display:block;width:40px;height:4px;border-radius:4px;background:var(--rule-strong,#c4cbd8);margin:0 auto 14px;}.ds-sh-head{display:flex;justify-content:space-between;gap:12px;}.ds-sh-head h2{margin:0;font-size:21px;font-weight:800;line-height:1.35;}.ds-sh-head p{margin:6px 0 0;font-size:13px;color:var(--ink-3,#5e6984);}.ds-kv{display:grid;grid-template-columns:72px 1fr;gap:10px;margin:0;padding:10px 0;border-bottom:1px solid var(--rule,#dce1e9);font-size:14.5px;}.ds-kv dt{color:var(--ink-3,#5e6984);font-size:13px;}.ds-kv dd{margin:0;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Stamp Book（スタンプ帳）",
+    "overview": "整個介面是一本車站／道之驛的蓋章本：冷白厚卡紙上，查證過的每一站都蓋著一枚印泥章。印章的顏色就是查證等級，蓋章的動作就是狀態改變的回饋。除了印章之外，頁面幾乎沒有裝飾，層級完全由「巨大的數字」對比「小而密的中文」撐起：日數、倒數、時間、金額都是 Barlow Condensed 的窄體大數字，中文內容則是系統黑體。\n\n密度偏高、單欄、為單手在戶外冬季光線下操作而設計。頂部是一條深海軍藍的導覽列，內容區是卡紙底色上用 1px 髮線分隔的列表，而不是一張張浮起的白卡片；只有浮在內容之上的東西（底部面板、新增按鈕、提示）才有陰影。深色模式把卡紙換成深藍黑、印泥提亮，印章改為一般混合以免在深底上消失。\n\n已確認拒絕的方向：旅遊 App 常見的白卡片牆與日期膠囊分頁。",
+    "keyCharacteristics": [
+      "四色印泥章（雙圈＋單一印字、略帶油墨毛邊與傾斜）是唯一的狀態語言",
+      "朱色同時代表「官方確認」與「今天／下一站」，全畫面只有這一個暖色焦點",
+      "窄體大數字（Barlow Condensed）負責層級，中文黑體負責內容",
+      "髮線分隔的平面列表，陰影只給浮層",
+      "海軍藍是唯一的結構色：頂列、主要按鈕、選取狀態",
+      "單欄最寬 560px，底部固定五分頁"
+    ],
+    "rules": [
+      {
+        "name": "The One Vermilion Rule",
+        "body": "朱色只代表兩件事：「官方確認／已結清」和「今天／下一站」。它不當按鈕色、不當裝飾、不當警示；危險動作一律用 Danger 紅。",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Pad Rule",
+        "body": "查證狀態只用印章顏色＋印字表達：朱「確」、黃土「次」、紫「電」、靛藍「衝」、不需查則是虛線空圈。不另外發明狀態徽章色。",
+        "section": "colors"
+      },
+      {
+        "name": "The Navy Spine Rule",
+        "body": "海軍藍是唯一的結構與互動色；選取、主要動作、目前位置都用它，不另引入第二個品牌色。",
+        "section": "colors"
+      },
+      {
+        "name": "The Big Number Rule",
+        "body": "層級由數字撐起：日數、倒數、時刻、金額一律用 Barlow Condensed 放大；中文標題最大 24px，不跟數字搶。",
+        "section": "typography"
+      },
+      {
+        "name": "The Seal-Only Face Rule",
+        "body": "Seal 字型只能出現在印章 SVG 內。新增印字必須重新子集化字型檔，否則會退回黑體。",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "內容區不用陰影卡片；列與列之間是 1px 髮線，區塊之間是髮線或虛線。陰影只給面板、FAB、提示與拖曳中的項目。",
+        "section": "elevation"
+      },
+      {
+        "name": "The Round Seal Rule",
+        "body": "正圓留給印章；其他元件不做成圓形徽章，避免和查證章混淆。",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** 用印章顏色表達查證等級：朱「確」、黃土「次」、紫「電」、靛藍「衝」，不需查只畫虛線空圈。",
+      "**Do** 讓數字當主角：日數 52px、倒數 76px、結算 56px、時刻 21px，一律 Barlow Condensed 加 `tabular-nums`。",
+      "**Do** 以 1px 髮線（#dce1e9）分隔列表，讓內容直接坐在卡紙底上。",
+      "**Do** 狀態改變時用 0.5s 的下壓蓋章動畫回饋，並在 `prefers-reduced-motion` 時關閉動畫。",
+      "**Do** 所有可點目標至少 40px，主要動作 44–46px，左右留白 16px。",
+      "**Do** 深色模式只換 token 值；印章改成一般混合模式。"
+    ],
+    "donts": [
+      "**Don't** 做白卡片牆或日期膠囊分頁；日期用列表與大日數呈現。",
+      "**Don't** 把朱色用在按鈕、裝飾或警示；刪除與錯誤用警示紅（#b3261e）。",
+      "**Don't** 給內容列或區塊加陰影；陰影只屬於面板、FAB、提示與拖曳中的項目。",
+      "**Don't** 在印章以外使用 Seal 字型，也不要在印章裡放子集以外的字。",
+      "**Don't** 用正圓形徽章表示印章以外的東西。"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>北陸自駕 8 日</title>
+<meta name="description" content="2026/11/26–12/3 北陸自駕：高山・白川鄉・金澤的行程與分帳">
+<meta name="theme-color" content="#1d2f5e">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preload" href="fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- 印泥質感：邊緣微微抖動＋細小缺墨 -->
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="warp"/>
+    <feDisplacementMap in="SourceGraphic" in2="warp" scale="1.5" xChannelSelector="R" yChannelSelector="G" result="shaky"/>
+    <feTurbulence type="fractalNoise" baseFrequency="1.9" numOctaves="1" seed="9" result="speck"/>
+    <feColorMatrix in="speck" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 2.6" result="mask"/>
+    <feComposite in="shaky" in2="mask" operator="in"/>
+  </filter>
+</svg>
+<main id="app" class="app" tabindex="-1"><p class="boot">讀取行程中…</p></main>
+<nav class="tabbar" aria-label="主要分頁"></nav>
+<dialog id="sheet" class="sheet" aria-label="詳細內容"></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
