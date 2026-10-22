@@ -21,6 +21,11 @@ colors:
   ink-na: "#8a93a8"
   danger: "#b3261e"
   focus: "#2a4280"
+  paper-dark: "#0f1524"
+  sheet-dark: "#161e31"
+  ink-dark: "#e8ecf5"
+  ink-3-dark: "#96a0b8"
+  rule-dark: "#26304a"
 typography:
   display:
     fontFamily: "Barlow Condensed, Arial Narrow, Noto Sans TC, PingFang TC, Microsoft JhengHei, system-ui, sans-serif"
@@ -43,14 +48,52 @@ typography:
     lineHeight: 1.1
     letterSpacing: "0.01em"
     fontFeature: "tnum"
+  display-lg:
+    fontFamily: "Barlow Condensed, Arial Narrow, Noto Sans TC, PingFang TC, Microsoft JhengHei, system-ui, sans-serif"
+    fontSize: "92px"
+    fontWeight: 700
+    lineHeight: 0.8
+    fontFeature: "tnum"
+  numeral-lg:
+    fontFamily: "Barlow Condensed, Arial Narrow, Noto Sans TC, PingFang TC, Microsoft JhengHei, system-ui, sans-serif"
+    fontSize: "30px"
+    fontWeight: 700
+    lineHeight: 1.1
+    fontFeature: "tnum"
+  numeral-sm:
+    fontFamily: "Barlow Condensed, Arial Narrow, Noto Sans TC, PingFang TC, Microsoft JhengHei, system-ui, sans-serif"
+    fontSize: "17px"
+    fontWeight: 600
+    lineHeight: 1.2
+    fontFeature: "tnum"
+  title-lg:
+    fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
+    fontSize: "28px"
+    fontWeight: 800
+    lineHeight: 1.3
   title:
     fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
     fontSize: "22px"
     fontWeight: 800
     lineHeight: 1.35
+  lead:
+    fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
+    fontSize: "17px"
+    fontWeight: 700
+    lineHeight: 1.4
+  input:
+    fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.4
   body:
     fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
     fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.55
+  small:
+    fontFamily: "Noto Sans TC, PingFang TC, Hiragino Sans, Microsoft JhengHei, Yu Gothic UI, system-ui, sans-serif"
+    fontSize: "14px"
     fontWeight: 400
     lineHeight: 1.55
   label:
@@ -222,6 +265,7 @@ components:
 **Character:** 窄體運動風數字像車票與里程表，負責「多少、幾點、第幾天」；黑體 700–800 粗字負責地名與動作；毛筆印字只活在印章裡。所有數字都套 `tabular-nums`。
 
 ### Hierarchy
+字級全部走 CSS token，不寫死數值：中文 `--fs-micro` 11.5／`--fs-label` 13／`--fs-small` 14／`--fs-body` 15／`--fs-lead` 17／`--fs-title` 22／`--fs-title-lg` 28（768px 以上的頁首）；數字 `--fn-sm` 17／`--fn-md` 21／`--fn-lg` 30／`--fn-headline` 52／`--fn-display` 76／`--fn-display-lg` 92（768px 以上的倒數）。輸入框固定 `--fs-input` 16px，避免 iOS 聚焦時自動放大。
 - **Display**（Barlow 700，76px，行高 0.8）：總覽頂區的出發倒數天數。
 - **Headline**（Barlow 700，52px，行高 0.86）：8 天列表左側的日數；結算金額用同一角色放到 56px（行高 1）。
 - **Numeral**（Barlow 600，21px，行高 1.1）：時間軸的時刻。同族的 16–22px 用於日期、明細金額與總計，合計放到 30px，金額輸入框 34px／700。
