@@ -17,7 +17,6 @@ SRC = sys.argv[1] if len(sys.argv) > 1 else '北陸自駕行程.xlsx'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'data')
 
-STATUS = {'✅': 'ok', '🟡': 'sec', '❗': 'call', '❌': 'bad', '—': 'na'}
 DAY_DATES = ['2026-11-26', '2026-11-27', '2026-11-28', '2026-11-29',
              '2026-11-30', '2026-12-01', '2026-12-02', '2026-12-03']
 
@@ -54,15 +53,14 @@ for i, r in enumerate(rows(wb['每日行程'], 2)):
     m = re.match(r'Day (\d)', s(r[0]))
     if not m:
         continue
-    status = STATUS.get(s(r[15])[:1], 'na')
     stops.append({
         'id': 's%02d' % (i + 1), 'day': int(m.group(1)), 'time': s(r[2]),
         'stay': int(r[3]) if isinstance(r[3], (int, float)) else None,
         'type': s(r[4]) or '景點', 'name': s(r[5]), 'ja': s(r[6]), 'intro': s(r[7]),
         'reason': s(r[8]), 'hours': s(r[9]), 'closed': s(r[10]), 'fee': s(r[11]),
-        'note': s(r[12]), 'address': s(r[13]), 'source': s(r[14]), 'status': status,
-        'verify': s(r[16]), 'phone': s(r[17]), 'verifySource': s(r[18]),
-        'verifyDate': s(r[19])[:10],
+        # 查證結果併進備註；查證來源改叫參考來源（與資料來源相同就不重複）
+        'note': '\n'.join(x for x in (s(r[12]), s(r[16])) if x), 'address': s(r[13]), 'source': s(r[14]),
+        'phone': s(r[17]), 'verifySource': '' if s(r[18]) == s(r[14]) else s(r[18]),
     })
 
 # 住宿：欄＝住宿，列＝欄位
@@ -101,8 +99,6 @@ for i, r in enumerate(rows(wb['出發前清單'], 2)):
     checklist.append({'id': 'c%02d' % (i + 1), 'cat': s(r[0]), 'text': s(r[1]),
                       'done': s(r[2]).upper() == 'Y', 'note': s(r[3])})
 
-# 查證說明
-legend = {s(r[0]): s(r[1]) for r in rows(wb['查證說明'])}
 
 # 地圖：drawing 錨點列 → 圖片；第 1 張是全程總覽，其後依序 Day 1–8
 z = zipfile.ZipFile(SRC)
@@ -128,8 +124,8 @@ with tempfile.TemporaryDirectory() as tmp:
 trip = {
     'version': 1, 'title': title, 'start': DAY_DATES[0], 'end': DAY_DATES[-1],
     'flights': flights, 'days': days, 'stops': stops, 'lodging': lodging,
-    'risks': risks, 'checklist': checklist, 'legend': legend, 'maps': maps,
-    'source': {'file': os.path.basename(SRC), 'verifiedOn': legend.get('查證日', '')[:10]},
+    'risks': risks, 'checklist': checklist, 'maps': maps,
+    'source': {'file': os.path.basename(SRC)},
 }
 with open(os.path.join(OUT, 'trip.json'), 'w', encoding='utf-8') as f:
     json.dump(trip, f, ensure_ascii=False, indent=1)
