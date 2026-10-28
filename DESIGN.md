@@ -290,7 +290,7 @@ components:
 
 ### Shadow Vocabulary
 - **面板上緣陰影**（`box-shadow: 0 -10px 32px rgba(0, 0, 0, .18)`）：底部面板，背後再加 `rgba(12, 20, 40, .42)` 遮罩。
-- **浮動按鈕陰影**（`box-shadow: 0 6px 16px rgba(0, 0, 0, .22), 0 1px 3px rgba(0, 0, 0, .18)`）：分帳頁的「記一筆」FAB。
+- **浮動按鈕陰影**（`box-shadow: 0 6px 16px rgba(0, 0, 0, .22), 0 1px 3px rgba(0, 0, 0, .18)`）：分帳頁的「記帳」FAB。
 - **提示陰影**（`box-shadow: 0 8px 20px rgba(0, 0, 0, .2)`）：toast 提示條。
 - **拖曳陰影**（`box-shadow: 0 8px 20px rgba(0, 0, 0, .14)`）：編輯模式中被拖起的那一站。
 

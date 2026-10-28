@@ -1,4 +1,4 @@
-// 分帳：記一筆、總帳、分類帳、日期帳、分帳帳目、設定
+// 分帳：記帳、總帳、分類帳、日期帳、分帳帳目、設定
 import { state, commit, uid, needsBackup } from './store.js';
 import { icon } from './icons.js';
 import { esc, stamp, openSheet, closeSheet, confirmTap, toast } from './ui.js';
@@ -49,7 +49,7 @@ function entryRow(e) {
 function settleBlock(sum) {
   const b = sum.balance;
   const n = liveCount();
-  if (!n) return `<section class="settle empty-settle"><p class="settle-who">還沒有任何一筆帳</p><p class="settle-hint">停好車、結完帳，按右下角「記一筆」，幾秒就記完。</p></section>`;
+  if (!n) return `<section class="settle empty-settle"><p class="settle-who">還沒有任何一筆帳</p><p class="settle-hint">停好車、結完帳，按右下角「記帳」，幾秒就記完。</p></section>`;
   const settled = L().settled;
   const done = settled && settled.balance === b;
   const line = b === 0 ? '兩邊剛好扯平' : b > 0 ? `${esc(who('mate'))}要給${esc(who('me'))}` : `${esc(who('me'))}要給${esc(who('mate'))}`;
@@ -114,7 +114,7 @@ export function renderLedger() {
     ${syncLine()}
     ${liveCount() ? `<div class="seg" role="tablist">${TABS.map(([k, l]) => `<button role="tab" aria-selected="${ui.tab === k}" data-act="ledger-tab" data-tab="${k}">${l}</button>`).join('')}</div>
     <div class="ledger-body">${body}</div>` : ''}
-    <button class="fab" data-act="new-entry">${icon('plus')}記一筆</button>`;
+    <button class="fab" data-act="new-entry">${icon('plus')}記帳</button>`;
   return html;
 }
 export function afterLedger() { if (ui.stampIn) setTimeout(() => { ui.stampIn = null; }, 50); }
@@ -129,7 +129,7 @@ export function settle(on) {
   schedule();
 }
 
-// ---------- 記一筆／改一筆 ----------
+// ---------- 記帳／改一筆 ----------
 function defaultDate() {
   const ph = phase(state.trip);
   if (ph === 'during') return todayDay(state.trip).date;
@@ -157,7 +157,7 @@ export function editEntry(id, preset = {}) {
   const summary = () => `${methodName(e.method)} · ${dateLabel(e.date).split(' · ')[0]} · ${splitLabel(e.split.type, e.split.me)}`;
 
   openSheet(`
-    <header class="sh-head"><div><h2>${isNew ? '記一筆' : '修改這筆帳'}</h2></div>
+    <header class="sh-head"><div><h2>${isNew ? '記帳' : '修改這筆帳'}</h2></div>
       <button class="icon-btn" data-close aria-label="關閉">${icon('close')}</button></header>
     <form class="form" id="entry-form" novalidate>
       <div class="amt-row">
